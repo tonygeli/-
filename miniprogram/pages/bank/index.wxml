@@ -1,0 +1,2 @@
+<view>银行名称： {{bankName}}</view>
+<view>推荐信用卡： {{creditCard}}</view>

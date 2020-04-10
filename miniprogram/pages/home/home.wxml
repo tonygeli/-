@@ -1,0 +1,23 @@
+<import src="../tpls/jobs/jobs-tpl.wxml"/>
+
+<view class="container container-home">
+    
+
+    <view class="home-main">
+        <!--最新活动-->
+        <view class="home-recommend">
+            <view class="home-main-header">今日推荐</view>
+            <view class="recommend-item" wx:for="{{activityArr}}" wx:key="index">
+              <navigator url="/pages/activity/index?id={{item._id}}" class="navi">{{item.title}}</navigator>
+            </view>
+        </view>
+
+        <!--推荐信用卡-->
+        <view class="home-main-products">
+            <view class="home-main-header">信用卡推荐</view>
+            <view class="credit-card-item">
+                <table tableThemes="{{themeArr}}" tableItems="{{bankArr}}"></table>
+            </view>
+        </view>
+    </view>
+</view>

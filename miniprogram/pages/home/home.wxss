@@ -1,0 +1,19 @@
+
+.recommend-item {
+  padding: 0rpx 50rpx;
+}
+
+.container-home {
+  align-items:unset
+}
+
+.home-main-header{
+  display: flex;
+  height: 60rpx;
+  color: #AB956D;
+  background-color: #fff;
+  font-size: 32rpx;
+  align-items: center;
+  justify-content: center;
+  margin: 20rpx 0;
+}

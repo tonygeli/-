@@ -1,0 +1,7 @@
+<view class="container"> 
+  <view>{{title}}</view>
+  <!-- <view>发布时间:{{createTime}}</view> -->
+  <view>
+    <rich-text nodes="{{content}}"></rich-text>
+  </view>
+</view>

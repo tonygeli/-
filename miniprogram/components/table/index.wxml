@@ -1,0 +1,19 @@
+<view class="table-outer-box">
+  <view class="table table-theme table-flex">
+    <view class="item" wx:for="{{tableThemes}}" wx:key="index">{{item}}</view>
+  </view>
+  
+  <scroll-view class="scroll-view flex-column" scroll-y="true" bindscrolltolower="loadMore">
+    <view class="table table-item table-flex" wx:for="{{tableItems}}" wx:key="index">
+      <view class="item" wx:for="{{item}}" wx:key="index">
+        <view wx:if="{{item.link!=undefined}}">
+          <navigator url="{{item.link}}" class="navi">
+            <image class="bank-icon" src='{{imagePath + item.icon}}' mode="aspectFit"></image>
+            {{item.name}}
+          </navigator>
+        </view>
+        <view wx:else>{{item}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

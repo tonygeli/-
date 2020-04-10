@@ -1,0 +1,41 @@
+.jobs-item{
+  min-height:150rpx;
+  width: 100%;
+  border-radius: 10rpx;
+  margin-right: 0;
+  margin-bottom: 15rpx;
+  text-align: center;
+}
+
+.job-first {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rpx 10rpx;
+}
+.job-first .job-name {
+  color: #00c2b3;
+  font-size: 40rpx;
+}
+.job-first .job-price {
+  color: #fc703e;
+  font-size: 35rpx;
+}
+
+.job-second {
+  font-size: 32rpx;
+  display: flex;
+  align-items: left;
+  padding-left: 10rpx;
+}
+
+.job-third {
+  display: flex;
+  align-items: left;
+}
+.job-third .tag {
+  border-radius: 15rpx;
+  margin: 0rpx 5rpx;
+  padding: 0 10rpx;
+  background-color: #ccc;
+  font-size: 30rpx;
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "头号卡玩家",
+  "usingComponents": {
+    "table": "../../components/table/index"
+  }
+}

@@ -1,0 +1,20 @@
+<template name="jobs">
+    <view class="jobs-box">
+        <block wx:for="{{jobsArr}}" wx:key="id">
+            <view class="jobs-item" bindtap="onProductsItemTap" data-id="{{item.id}}">
+                <view class="job-first">
+                  <text class="job-name">{{item.name}}</text>
+                  <text class="job-price">{{item.price_low}}-{{item.price_high}}K</text>
+                </view>
+                <view class="job-second">
+                  <text class="company">{{item.company_name}} {{item.company_size}}</text>  
+                </view>
+                <view class="job-third">
+                  <view wx:for="{{item.tags}}" wx:key="t_id" wx:for-item="t_item">
+                    <text class="tag">{{t_item}}</text>
+                  </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</template>
